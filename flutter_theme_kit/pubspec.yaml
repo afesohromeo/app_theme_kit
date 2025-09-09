@@ -1,18 +1,18 @@
 name: flutter_theme_kit
-description: A reusable Material 3 theme kit for Flutter apps with custom color schemes, text styles, and spacing constants.
+description: A modular Flutter theming kit with light/dark mode, color schemes, text themes, and Material 3 subthemes.
 version: 0.0.1
 homepage: https://github.com/afesohromeo/flutter_theme_kit
 repository: https://github.com/afesohromeo/flutter_theme_kit
+issue_tracker: https://github.com/afesohromeo/flutter_theme_kit/issues
 
 environment:
-  sdk: '>=3.6.0'
-  flutter: ">=1.17.0"
+  sdk: ">=3.6.0"
 
 dependencies:
   flutter:
     sdk: flutter
   google_fonts: ^6.1.0 # if you're using Google Fonts
-  
+
 dev_dependencies:
   flutter_test:
     sdk: flutter

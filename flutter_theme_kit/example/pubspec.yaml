@@ -1,0 +1,22 @@
+name: flutter_theme_kit_example
+description: Demonstrates how to use the flutter_theme_kit package.
+publish_to: "none" # prevents publishing the example to pub.dev
+
+environment:
+  sdk: ">=3.6.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # Import your package from the parent folder
+  flutter_theme_kit:
+    path: ../
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+
+flutter:
+  uses-material-design: true
