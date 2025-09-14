@@ -37,7 +37,7 @@ class AppTextTheme {
     displayMedium: GoogleFonts.quicksand(
       fontSize: 16.0,
       fontWeight: FontWeight.w800,
-      color: AppColors.black1,
+      color: AppColors.white1,
     ),
     displaySmall: GoogleFonts.quicksand(
       fontSize: 13.0,

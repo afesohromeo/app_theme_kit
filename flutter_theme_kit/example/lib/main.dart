@@ -32,8 +32,14 @@ class ThemeShowcasePage extends StatelessWidget {
       child: Scaffold(
         appBar: AppBar(
           title: const Text('Flutter Theme Kit'),
-          bottom: const TabBar(
-            tabs: [
+          bottom: TabBar(
+            labelStyle:
+                textTheme.displayMedium!.copyWith(color: AppColors.white1),
+            labelColor: AppColors.white1,
+            unselectedLabelColor: AppColors.white1.withValues(alpha: .7),
+            unselectedLabelStyle: textTheme.displayMedium!
+                .copyWith(color: AppColors.grey1, fontSize: 13),
+            tabs: const [
               Tab(icon: Icon(Icons.text_fields), text: "Typography"),
               Tab(icon: Icon(Icons.layers), text: "Widgets"),
             ],
