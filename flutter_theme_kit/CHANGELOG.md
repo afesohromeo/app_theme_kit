@@ -10,3 +10,5 @@ All notable changes to this project will be documented in this file.
 - Example app demonstrating usage
 ## 0.0.2
 - Added screenshots to README
+## 0.0.3
+- Update Readme to display images properly
