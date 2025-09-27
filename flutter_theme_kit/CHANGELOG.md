@@ -8,3 +8,5 @@ All notable changes to this project will be documented in this file.
 - Design tokens for spacing, padding, radius, elevation
 - Subthemes included: CardTheme, TabBarTheme, NavigationBarTheme, BottomAppBarTheme
 - Example app demonstrating usage
+## 0.0.2
+- Added screenshots to README

@@ -161,11 +161,9 @@ It demonstrates:
 
 ## 📷 Screenshots
 
-_Add screenshots here after running the example app._  
-
-| Light Mode | Dark Mode |
-|------------|-----------|
-| ![Light](screenshots/light.png) | ![Dark](screenshots/dark.png) |
+| ![typography](screenshots/typography.png) 
+| ![home](screenshots/widgets_home.png) 
+| ![settings](screenshots/widgets_settings.png)
 
 ---
 
