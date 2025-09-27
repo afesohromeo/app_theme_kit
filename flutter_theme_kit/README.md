@@ -161,9 +161,9 @@ It demonstrates:
 
 ## 📷 Screenshots
 
-| ![typography](screenshots/typography.png) 
-| ![home](screenshots/widgets_home.png) 
-| ![settings](screenshots/widgets_settings.png)
+| Typography | Home | Settings |
+|------------|------|----------|
+| ![Typography](screenshots/typography.png) | ![Home](screenshots/widgets_home.png) | ![Settings](screenshots/widgets_settings.png) |
 
 ---
 
