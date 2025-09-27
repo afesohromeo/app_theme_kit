@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_theme_kit/flutter_theme_kit.dart';
+import 'package:app_theme_kit/app_theme_kit.dart';
 
 void main() {
   runApp(const ThemeKitExample());

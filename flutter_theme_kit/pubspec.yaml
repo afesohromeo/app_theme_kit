@@ -1,13 +1,12 @@
-name: flutter_theme_kit
+name: app_theme_kit
 description: A modular Flutter theming kit with light/dark mode, color schemes, text themes, and Material 3 subthemes.
 version: 0.0.1
-homepage: https://github.com/afesohromeo/flutter_theme_kit
-repository: https://github.com/afesohromeo/flutter_theme_kit
-issue_tracker: https://github.com/afesohromeo/flutter_theme_kit/issues
+homepage: https://github.com/afesohromeo/app_theme_kit
+repository: https://github.com/afesohromeo/app_theme_kit
+issue_tracker: https://github.com/afesohromeo/app_theme_kit/issues
 
 environment:
-  sdk: ">=3.6.0"
-
+  sdk: ">=3.6.0 <4.0.0"
 dependencies:
   flutter:
     sdk: flutter

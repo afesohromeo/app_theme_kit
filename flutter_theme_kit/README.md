@@ -1,4 +1,4 @@
-# 📦 flutter_theme_kit
+# 📦 app_theme_kit
 
 A reusable **Material 3 theme package** for Flutter apps with customizable **color schemes, text styles, subthemes, and spacing constants**.  
 Quickly set up a consistent design system across your apps.
@@ -26,7 +26,7 @@ Add to your `pubspec.yaml`:
 
 ```yaml
 dependencies:
-  flutter_theme_kit: ^0.0.1
+  app_theme_kit: ^0.0.1
 ```
 
 Then run:
@@ -40,7 +40,7 @@ flutter pub get
 
 Import the package:
 ```dart
-import 'package:flutter_theme_kit/flutter_theme_kit.dart';
+import 'package:app_theme_kit/app_theme_kit.dart';
 ```
 
 Wrap your app:

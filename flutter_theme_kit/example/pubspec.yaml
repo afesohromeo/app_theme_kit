@@ -1,5 +1,5 @@
-name: flutter_theme_kit_example
-description: Demonstrates how to use the flutter_theme_kit package.
+name: app_theme_kit_example
+description: Demonstrates how to use the app_theme_kit package.
 publish_to: "none" # prevents publishing the example to pub.dev
 
 environment:
@@ -10,7 +10,7 @@ dependencies:
     sdk: flutter
 
   # Import your package from the parent folder
-  flutter_theme_kit:
+  app_theme_kit:
     path: ../
 
 dev_dependencies:

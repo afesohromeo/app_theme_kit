@@ -1,4 +1,4 @@
-// library flutter_theme_kit;
+// library app_theme_kit;
 
 export 'src/app_theme.dart';
 export 'src/app_colors.dart';

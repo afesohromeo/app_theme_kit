@@ -1,6 +1,6 @@
 # Flutter Theme Kit Example
 
-This example demonstrates how to use `flutter_theme_kit` in a real Flutter app.
+This example demonstrates how to use `app_theme_kit` in a real Flutter app.
 
 ## Features Demonstrated
 

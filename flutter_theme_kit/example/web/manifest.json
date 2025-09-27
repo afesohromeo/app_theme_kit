@@ -1,6 +1,6 @@
 {
-    "name": "flutter_theme_kit_example",
-    "short_name": "flutter_theme_kit_example",
+    "name": "app_theme_kit_example",
+    "short_name": "app_theme_kit_example",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",
