@@ -12,3 +12,5 @@ All notable changes to this project will be documented in this file.
 - Added screenshots to README
 ## 0.0.3
 - Update Readme to display images properly
+## 0.0.4
+- Update Readme to display images verticaly

@@ -161,19 +161,12 @@ It demonstrates:
 
 ## 📷 Screenshots
 
-| Typography | Home | Settings |
-|------------|------|----------|
-| ![Typography](screenshots/typography.png) | ![Home](screenshots/widgets_home.png) | ![Settings](screenshots/widgets_settings.png) |
+![Typography](screenshots/typography.png)  
+![Home](screenshots/widgets_home.png)  
+![Settings](screenshots/widgets_settings.png)
 
 ---
 
-## 📝 Roadmap
-
-- [ ] Add support for custom font configuration  
-- [ ] Add more subthemes (FloatingActionButton, Snackbar, etc.)  
-- [ ] Add color scheme generator from seed color  
-
----
 
 ## 🤝 Contributing
 
