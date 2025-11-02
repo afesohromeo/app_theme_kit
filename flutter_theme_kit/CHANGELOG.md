@@ -14,3 +14,6 @@ All notable changes to this project will be documented in this file.
 - Update Readme to display images properly
 ## 0.0.4
 - Update Readme to display images verticaly
+## 0.0.5
+- Fixed README images not showing on pub.dev by including `screenshots/` folder.
+- No code changes.
