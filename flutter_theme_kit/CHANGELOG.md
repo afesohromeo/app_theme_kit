@@ -17,3 +17,6 @@ All notable changes to this project will be documented in this file.
 ## 0.0.5
 - Fixed README images not showing on pub.dev by including `screenshots/` folder.
 - No code changes.
+## 0.0.5+1
+- Fixed README images not showing on pub.dev by including `screenshots/` folder.
+- No code changes.
