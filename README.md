@@ -161,9 +161,9 @@ It demonstrates:
 
 ## 📷 Screenshots
 
-![Typography](screenshots/typography.png)  
-![Home](screenshots/widgets_home.png)  
-![Settings](screenshots/widgets_settings.png)
+![Typography](https://drive.google.com/file/d/1DUgbq2nnPk2vKLIyfGhO03zYhXX7Z_GW/view?usp=sharing)  
+![Home](https://drive.google.com/file/d/1nKTyy6nr9lx06_gLEBLTrJ5q4cuSq88r/view?usp=sharing)  
+![Settings](https://drive.google.com/file/d/1PjS5t0BTf_VYRbP_l8OVxeoQiAZZ6E0k/view?usp=sharing)
 
 ---
 
