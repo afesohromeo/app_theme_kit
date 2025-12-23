@@ -161,9 +161,11 @@ It demonstrates:
 
 ## 📷 Screenshots
 
-![Typography](https://imgur.com/a/yUOnw0v)  
-![Home](https://drive.google.com/file/d/1nKTyy6nr9lx06_gLEBLTrJ5q4cuSq88r/view?usp=sharing)  
-![Settings](https://drive.google.com/file/d/1PjS5t0BTf_VYRbP_l8OVxeoQiAZZ6E0k/view?usp=sharing)
+![Typography](https://raw.githubusercontent.com/afesohromeo/app_theme_kit/main/screenshots/typography.png)  
+
+![Home](https://raw.githubusercontent.com/afesohromeo/app_theme_kit/main/screenshots/widgets_home.png)  
+
+![Settings](https://raw.githubusercontent.com/afesohromeo/app_theme_kit/main/screenshots/widgets_settings.png)
 
 ---
 
