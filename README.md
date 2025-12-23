@@ -161,10 +161,13 @@ It demonstrates:
 
 ## 📷 Screenshots
 
-![Typography](https://raw.githubusercontent.com/afesohromeo/app_theme_kit/main/screenshots/typography.png)  
+### Typography
+![Typography](https://raw.githubusercontent.com/afesohromeo/app_theme_kit/main/screenshots/typography.png)
 
-![Home](https://raw.githubusercontent.com/afesohromeo/app_theme_kit/main/screenshots/widgets_home.png)  
+### Home
+![Home](https://raw.githubusercontent.com/afesohromeo/app_theme_kit/main/screenshots/widgets_home.png)
 
+### Settings
 ![Settings](https://raw.githubusercontent.com/afesohromeo/app_theme_kit/main/screenshots/widgets_settings.png)
 
 ---

@@ -34,3 +34,6 @@ All notable changes to this project will be documented in this file.
 ## 0.0.8
 - Fix screenshots rendering on pub.dev. make app_theme_kit repo public
 - No code changes.
+## 0.0.8+1
+- Fix screenshots rendering on pub.dev. Resize image 
+- No code changes.
