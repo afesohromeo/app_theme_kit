@@ -10,11 +10,20 @@ class ThemeKitExample extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    const customColors = AppColors(
+      primary: Color(0xff13708E),
+      secondary: Color(0xff8F9093),
+      background: Colors.white,
+      surface: Colors.white,
+      error: Colors.redAccent,
+    );
+
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'Flutter Theme Kit Example',
-      theme: AppTheme.light,
-      darkTheme: AppTheme.dark,
-      themeMode: ThemeMode.system, // Switch with system settings
+      theme: AppTheme.light(colors: customColors),
+      darkTheme: AppTheme.dark(colors: customColors),
+      themeMode: ThemeMode.system,
       home: const ThemeShowcasePage(),
     );
   }
@@ -26,6 +35,8 @@ class ThemeShowcasePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final textTheme = Theme.of(context).textTheme;
+    final colors =
+        AppTheme.light().colorScheme; // or fetch from context if needed
 
     return DefaultTabController(
       length: 2,
@@ -33,12 +44,11 @@ class ThemeShowcasePage extends StatelessWidget {
         appBar: AppBar(
           title: const Text('Flutter Theme Kit'),
           bottom: TabBar(
-            labelStyle:
-                textTheme.displayMedium!.copyWith(color: AppColors.white1),
-            labelColor: AppColors.white1,
-            unselectedLabelColor: AppColors.white1.withValues(alpha: .7),
+            labelStyle: textTheme.displayMedium!.copyWith(color: Colors.white),
+            labelColor: colors.surface,
+            unselectedLabelColor: colors.surface.withValues(alpha: 0.7),
             unselectedLabelStyle: textTheme.displayMedium!
-                .copyWith(color: AppColors.grey1, fontSize: 13),
+                .copyWith(fontSize: 13, color: colors.secondary),
             tabs: const [
               Tab(icon: Icon(Icons.text_fields), text: "Typography"),
               Tab(icon: Icon(Icons.layers), text: "Widgets"),
@@ -52,6 +62,7 @@ class ThemeShowcasePage extends StatelessWidget {
           ],
         ),
         bottomNavigationBar: BottomAppBar(
+          color: colors.surface,
           child: Padding(
             padding: const EdgeInsets.all(AppSpacing.md),
             child: Text(
@@ -66,7 +77,7 @@ class ThemeShowcasePage extends StatelessWidget {
   }
 }
 
-/// Demonstrates text styles (Display, Title, Body)
+/// Typography demonstration
 class TypographyShowcase extends StatelessWidget {
   const TypographyShowcase({super.key});
 
@@ -89,13 +100,14 @@ class TypographyShowcase extends StatelessWidget {
           const SizedBox(height: AppSpacing.md),
           Text("Body Large", style: textTheme.bodyLarge),
           Text("Body Medium", style: textTheme.bodyMedium),
+          Text("Label Large", style: textTheme.labelLarge),
         ],
       ),
     );
   }
 }
 
-/// Demonstrates subthemes (Card, NavBar, etc.)
+/// Widgets demonstration
 class WidgetsShowcase extends StatefulWidget {
   const WidgetsShowcase({super.key});
 
@@ -108,6 +120,8 @@ class _WidgetsShowcaseState extends State<WidgetsShowcase> {
 
   @override
   Widget build(BuildContext context) {
+    final theme = Theme.of(context);
+
     return Scaffold(
       body: Center(
         child: Card(
@@ -121,7 +135,7 @@ class _WidgetsShowcaseState extends State<WidgetsShowcase> {
                 const SizedBox(height: AppSpacing.sm),
                 Text(
                   "This Card uses AppCardTheme",
-                  style: Theme.of(context).textTheme.titleMedium,
+                  style: theme.textTheme.titleMedium,
                 ),
               ],
             ),
