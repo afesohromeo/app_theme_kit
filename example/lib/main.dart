@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:app_theme_kit/app_theme_kit.dart';
 
+final ValueNotifier<bool> isDarkModeNotifier = ValueNotifier(false);
+
 void main() {
   runApp(const ThemeKitExample());
 }
@@ -10,21 +12,33 @@ class ThemeKitExample extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    const customColors = AppColors(
+    const lightColors = AppColors(
       primary: Color(0xff13708E),
-      secondary: Color(0xff8F9093),
+      secondary: Colors.black87,
       background: Colors.white,
       surface: Colors.white,
       error: Colors.redAccent,
     );
+    final darkColors = AppColors(
+      primary: Colors.teal.shade200,
+      secondary: Colors.orange.shade200,
+      background: const Color(0xFF121212),
+      surface: const Color(0xFF1E1E1E),
+      error: Colors.red.shade300,
+    );
 
-    return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      title: 'Flutter Theme Kit Example',
-      theme: AppTheme.light(colors: customColors),
-      darkTheme: AppTheme.dark(colors: customColors),
-      themeMode: ThemeMode.system,
-      home: const ThemeShowcasePage(),
+    return ValueListenableBuilder<bool>(
+      valueListenable: isDarkModeNotifier,
+      builder: (context, isDarkMode, _) {
+        return MaterialApp(
+          debugShowCheckedModeBanner: false,
+          title: 'Flutter Theme Kit Example',
+          theme: AppTheme.light(colors: lightColors),
+          darkTheme: AppTheme.dark(colors: darkColors),
+          themeMode: isDarkMode ? ThemeMode.dark : ThemeMode.light,
+          home: const ThemeShowcasePage(),
+        );
+      },
     );
   }
 }
@@ -42,7 +56,26 @@ class ThemeShowcasePage extends StatelessWidget {
       length: 2,
       child: Scaffold(
         appBar: AppBar(
+          centerTitle: false,
           title: const Text('Flutter Theme Kit'),
+          actions: [
+            ValueListenableBuilder<bool>(
+              valueListenable: isDarkModeNotifier,
+              builder: (context, isDarkMode, _) {
+                return Row(
+                  children: [
+                    const Icon(Icons.light_mode),
+                    Switch(
+                      value: isDarkMode,
+                      onChanged: (value) => isDarkModeNotifier.value = value,
+                    ),
+                    const Icon(Icons.dark_mode),
+                    const SizedBox(width: 8),
+                  ],
+                );
+              },
+            ),
+          ],
           bottom: TabBar(
             labelStyle: textTheme.displayMedium!.copyWith(color: Colors.white),
             labelColor: colors.surface,

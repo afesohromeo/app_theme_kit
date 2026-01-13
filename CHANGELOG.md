@@ -59,3 +59,6 @@ All notable changes to this project will be documented in this file.
 - Example app now correctly uses `AppTheme.light()` and `AppTheme.dark()`.
 - Removed hardcoded color usage from the example in favor of theme-driven colors.
 - Prevented missing or null `TextTheme` styles in the example app.
+## 0.0.9+1
+- update README.md file to demonstrate switching themes from light to dark
+- No code changes.
