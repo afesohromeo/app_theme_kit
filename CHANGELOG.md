@@ -37,3 +37,25 @@ All notable changes to this project will be documented in this file.
 ## 0.0.8+1
 - Fix screenshots rendering on pub.dev. Resize image 
 - No code changes.
+## 0.0.9
+
+### Changed
+- Refactored theming architecture to allow full color customization via `AppColors`.
+- Removed reliance on static color constants inside subthemes.
+- All component subthemes (`TextTheme`, `CardTheme`, `TabBarTheme`, `NavigationBarTheme`,
+  `BottomAppBarTheme`, `AppBarTheme`) now consume injected `AppColors`.
+- `TextTheme` now fully supports Material 3 typography styles.
+
+### Added
+- `AppColors` data class for defining custom color palettes.
+- `DefaultAppColors` for built-in light and dark defaults.
+- Improved `color_schemes.dart` integration with `AppColors`.
+- Updated example app demonstrating:
+  - Custom color injection
+  - Typography showcase
+  - Card, TabBar, NavigationBar, BottomAppBar, and AppBar theming
+
+### Fixed
+- Example app now correctly uses `AppTheme.light()` and `AppTheme.dark()`.
+- Removed hardcoded color usage from the example in favor of theme-driven colors.
+- Prevented missing or null `TextTheme` styles in the example app.

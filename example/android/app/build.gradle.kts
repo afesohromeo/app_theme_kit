@@ -8,7 +8,7 @@ plugins {
 android {
     namespace = "com.example.app_theme_kit_example"
     compileSdk = flutter.compileSdkVersion
-    ndkVersion = flutter.ndkVersion
+    ndkVersion = "28.0.12674087"
 
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_11
@@ -37,7 +37,6 @@ android {
             signingConfig = signingConfigs.getByName("debug")
         }
     }
-    ndkVersion "28.0.12674087"
 }
 
 flutter {
