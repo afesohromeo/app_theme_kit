@@ -62,5 +62,5 @@ All notable changes to this project will be documented in this file.
 ## 0.0.9+1
 - update README.md file to demonstrate switching themes from light to dark
 - No code changes.
-## 0.0.9+2
+## 0.0.10
 - Refactor BottomAppBarTheme to BottomAppBarThemeData.
