@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import '../colors/app_colors.dart';
 
-TextTheme buildTextTheme(AppColors colors) {
+TextTheme buildTextTheme(AppColors colors, BuildContext context) {
   return TextTheme(
     // Display styles
     displayLarge: GoogleFonts.quicksand(

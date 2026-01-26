@@ -33,8 +33,8 @@ class ThemeKitExample extends StatelessWidget {
         return MaterialApp(
           debugShowCheckedModeBanner: false,
           title: 'Flutter Theme Kit Example',
-          theme: AppTheme.light(colors: lightColors),
-          darkTheme: AppTheme.dark(colors: darkColors),
+          theme: AppTheme.light(colors: lightColors, context: context),
+          darkTheme: AppTheme.dark(colors: darkColors, context: context),
           themeMode: isDarkMode ? ThemeMode.dark : ThemeMode.light,
           home: const ThemeShowcasePage(),
         );
@@ -49,15 +49,18 @@ class ThemeShowcasePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final textTheme = Theme.of(context).textTheme;
-    final colors =
-        AppTheme.light().colorScheme; // or fetch from context if needed
+    final colors = AppTheme.light(context: context)
+        .colorScheme; // or fetch from context if needed
 
     return DefaultTabController(
       length: 2,
       child: Scaffold(
         appBar: AppBar(
           centerTitle: false,
-          title: const Text('Flutter Theme Kit'),
+          title: Text(
+            'Flutter Theme Kit',
+            style: textTheme.displayMedium!.copyWith(color: Colors.white),
+          ),
           actions: [
             ValueListenableBuilder<bool>(
               valueListenable: isDarkModeNotifier,

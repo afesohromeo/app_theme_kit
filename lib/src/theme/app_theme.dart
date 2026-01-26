@@ -8,13 +8,13 @@ import 'bottom_appbar_theme.dart';
 
 class AppTheme {
   /// Light theme
-  static ThemeData light({AppColors? colors}) {
+  static ThemeData light({AppColors? colors, required BuildContext context}) {
     final c = colors ?? DefaultAppColors.light;
 
     return ThemeData(
       useMaterial3: true,
       colorScheme: AppColorSchemes.light(c),
-      textTheme: buildTextTheme(c),
+      textTheme: buildTextTheme(c, context),
       cardTheme: buildCardTheme(c),
       tabBarTheme: buildTabBarTheme(c),
       navigationBarTheme: buildNavigationBarTheme(c),
@@ -24,13 +24,13 @@ class AppTheme {
   }
 
   /// Dark theme
-  static ThemeData dark({AppColors? colors}) {
+  static ThemeData dark({AppColors? colors, required BuildContext context}) {
     final c = colors ?? DefaultAppColors.dark;
 
     return ThemeData(
       useMaterial3: true,
       colorScheme: AppColorSchemes.dark(c),
-      textTheme: buildTextTheme(c),
+      textTheme: buildTextTheme(c, context),
       cardTheme: buildCardTheme(c),
       tabBarTheme: buildTabBarTheme(c),
       navigationBarTheme: buildNavigationBarTheme(c),
