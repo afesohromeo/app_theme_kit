@@ -64,3 +64,6 @@ All notable changes to this project will be documented in this file.
 - No code changes.
 ## 0.0.10
 - Refactor BottomAppBarTheme to BottomAppBarThemeData.
+
+## 0.1.0
+- update google font dependencies
